@@ -69,3 +69,62 @@ button {
     font-size: 14px;
     gap: 42px;
 }
+
+.collapse-navbar {
+    display: none;
+}
+
+
+/* temp */
+
+.drawer {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .collapse-navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    nav {
+        min-height: 84px;
+        box-sizing: content-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 16px;
+    }
+    .drawer {
+        height: 100vh;
+        width: 53%;
+        right: 0px;
+        top: 0px;
+        position: absolute;
+        background-color: white;
+        padding: 22px 19px;
+        display: flex;
+        gap: 36px;
+        flex-direction: column;
+    }
+    .drawer-list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        list-style: none;
+    }
+    .drawer-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .close-menu-icon {
+        align-self: flex-end;
+    }
+    .nav-bar-item {
+        display: none;
+    }
+    .nav-bar-right-items {
+        display: none;
+    }
+}
